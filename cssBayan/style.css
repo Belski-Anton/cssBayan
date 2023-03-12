@@ -1,0 +1,192 @@
+body {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: rgb(190, 190, 190);
+}
+
+.wrapper {
+   background: #808080;
+   max-width: 95%;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+.title {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+
+}
+
+
+label{
+   cursor: pointer;
+}
+
+
+
+
+
+input {
+   appearance: none;
+   width: 0;
+   height: 0;
+   position: absolute;
+}
+
+
+
+.check {
+   opacity: 0;
+
+   width: 0.75em;
+   height: 0.75em;
+   transition: 1.5s;
+}
+
+
+
+
+
+
+
+hr {
+   width: 100%;
+}
+
+h1{
+   font-size: 2em;
+}
+
+
+h2 {
+   display: inline-block;
+   margin-top: 0;
+   cursor: pointer;
+   font-size: 1.075em;
+   color: blue;
+}
+
+
+
+
+.meme {
+   display: block;
+   margin: 0 auto;
+   opacity: 0;
+   width: 0;
+   height: 0;
+   transition: 1.5s;
+   cursor: pointer;
+
+}
+
+
+
+
+
+
+
+input:checked~.title .check {
+   transform: rotate(45deg);
+
+}
+
+
+
+
+input:checked~.meme {
+   opacity: 1;
+   width: 12em;
+   height: 10em;
+   
+}
+
+input:checked~.title>h2{
+   color: black;
+}
+
+
+
+
+
+@media(hover: hover) {
+   .wrapper:hover h2{
+      color: black;
+   }
+   label:hover .meme {
+      opacity: 1;
+      width: 12em;
+      height: 10em;
+   }
+   
+   label:hover .check {
+      transform: rotate(45deg);
+   }
+   label:hover>img {
+      opacity: 1;
+      width: 20em;
+      height: 15em;
+   }
+   .wrapper:hover .check {
+      opacity: 1;
+   }
+}
+
+
+
+@media(min-width:820px){
+   h1 {
+      font-size: 2.2em;
+   }
+   h2{
+      font-size: 1.5em;
+   }
+   .check{
+      width: 1.2em;
+      height: 1.2em;
+   }
+   
+   
+label:hover .meme {
+   width: 20em;
+   height: 15em;
+}
+
+   input:checked~.meme {
+      width: 20em;
+      height: 15em;
+   }
+
+}
+
+@media(min-width:1920px){
+   .wrapper {
+      max-width: 70%;
+      padding: 1em 10em 1em 10em;
+   }
+   h1 {
+      font-size: 3em;
+   }
+   h2{
+      font-size: 2em;
+   }
+   .check{
+      width: 1.75em;
+      height: 1.75em;
+   }
+   
+   
+label:hover .meme {
+   width: 30em;
+   height: 20em;
+}
+
+   input:checked~.meme {
+      width: 30em;
+      height: 20em;
+   }
+    
+   
+}
