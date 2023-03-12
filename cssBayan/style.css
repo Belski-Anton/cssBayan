@@ -26,11 +26,6 @@ label{
 
 
 
-label:hover>img {
-   opacity: 1;
-   width: 20em;
-   height: 15em;
-}
 
 
 input {
@@ -89,19 +84,9 @@ h2 {
 
 
 
-.wrapper:hover h2{
-   color: black;
-}
 
-label:hover .meme {
-   opacity: 1;
-   width: 12em;
-   height: 10em;
-}
 
-label:hover .check {
-   transform: rotate(45deg);
-}
+
 
 input:checked~.title .check {
    transform: rotate(45deg);
@@ -123,9 +108,33 @@ input:checked~.title>h2{
 }
 
 
-.wrapper:hover .check {
-   opacity: 1;
+
+
+
+@media(hover: hover) {
+   .wrapper:hover h2{
+      color: black;
+   }
+   label:hover .meme {
+      opacity: 1;
+      width: 12em;
+      height: 10em;
+   }
+   
+   label:hover .check {
+      transform: rotate(45deg);
+   }
+   label:hover>img {
+      opacity: 1;
+      width: 20em;
+      height: 15em;
+   }
+   .wrapper:hover .check {
+      opacity: 1;
+   }
 }
+
+
 
 @media(min-width:820px){
    h1 {
