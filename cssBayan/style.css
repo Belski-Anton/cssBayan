@@ -151,3 +151,33 @@ label:hover .meme {
    }
 
 }
+
+@media(min-width:1920px){
+   .wrapper {
+      max-width: 70%;
+      padding: 1em 10em 1em 10em;
+   }
+   h1 {
+      font-size: 3em;
+   }
+   h2{
+      font-size: 2em;
+   }
+   .check{
+      width: 1.75em;
+      height: 1.75em;
+   }
+   
+   
+label:hover .meme {
+   width: 30em;
+   height: 20em;
+}
+
+   input:checked~.meme {
+      width: 30em;
+      height: 20em;
+   }
+    
+   
+}
